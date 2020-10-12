@@ -1,21 +1,25 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.4.10"
-    application
+	kotlin("jvm") version "1.4.10"
+	application
 }
+
 group = "com.floern.kotlin.inlinerror"
 version = "1.0"
 
 repositories {
-    mavenCentral()
+	mavenCentral()
 }
+
 dependencies {
-    testImplementation(kotlin("test-junit"))
+	testImplementation(kotlin("test-junit"))
 }
-tasks.withType<KotlinCompile>() {
-    kotlinOptions.jvmTarget = "1.8"
+
+tasks.withType<KotlinCompile> {
+	kotlinOptions.jvmTarget = "1.8"
 }
+
 application {
-    mainClassName = "MainKt"
+	mainClassName = "MainKt"
 }

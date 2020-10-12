@@ -1,3 +1,4 @@
+@file:Suppress("NOTHING_TO_INLINE", "unused", "UNUSED_PARAMETER")
 
 fun main() {
 	aa(42)

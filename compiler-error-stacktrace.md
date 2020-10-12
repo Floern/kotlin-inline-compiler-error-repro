@@ -5,9 +5,9 @@
 > Task :classes UP-TO-DATE
 > Task :compileTestKotlin FAILED
 e: org.jetbrains.kotlin.codegen.CompilationException: Back-end (JVM) Internal error: Couldn't inline method call 'aa' into
-@org.junit.Test public final fun aa(): kotlin.Unit defined in MainTest
+@org.junit.Test public final fun test(): kotlin.Unit defined in MainTest
 @Test
-	fun aa() {
+	fun test() {
 		aa(42)
 	}
 Cause: aa (I)V:
